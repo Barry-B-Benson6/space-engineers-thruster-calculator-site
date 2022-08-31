@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="Functions.js"></script>
+    </head>
+
+    <body onload="Setup()">
+        <header id="header">
+            <h1>Space Engineers Calculator</h1>
+        </header>
+
+        <div id="main-wrapper">
+
+         <div id="content-wrapper">
+            <h1 class="subhead">Forces calculator</h1>
+
+            <table>
+                <tr>
+                    <input type="button" class="grid-type-button" id="SmallGrid" value="SmallGrid" onclick="SmallGrid()">
+                    <input type="button" class="grid-type-button" id="LargeGrid" value="LargeGrid" onclick="LargeGrid()">
+                </tr>
+            </table>
+
+            <table id="input-table">
+                <tr>
+                    <td><label for="mass" class="label">Mass (Kg):</label></td>
+                    <td><input type="number" name="mass" id="mass" placeholder="1000"/></td>
+                </tr>
+                <tr>
+                    <td><label for="gravity" class="label">Gravity (G's):</label></td>
+                    <td><input type="number" name="gravity" id="gravity" placeholder="1"/></td>
+                </tr>
+                <tr>
+                    <td><label for="acceleration" class="label">Vertical acceleration:</label></td>
+                    <td><input type="number" name="acceleration" id="acceleration" placeholder="0"/></td>
+                </tr>
+            </table>
+            <input type="submit" value="Calculate" id="calculate" onclick="Calculate()"/>
+         </div>
+
+         <div id="thrusters">
+            <table class="thrusters-table">
+                <tr>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                            <br>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="thruster-card">
+                            <h1 class="subhead">Thruster</h1>
+                            <h2 class="info-label">0</h2>
+                            
+                            <p1 class="info-label thruster-mass">Mass (Kg):</p1>
+                            <p1 class="info-label thruster-power">Power (MW):</p1>
+                            <p1 class="info-label vertical-acceleration">Lift (m/s):</p1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+         </div>
+
+        </div>
+    </body>
+</html>
